@@ -8,6 +8,10 @@ const Comments = props => {
 
   return (
     <div>
+      <form className='comment-text'>
+        <input type='text' placeholder='comment'/>
+        <button>post</button>
+      </form>
       {/* map through the comments prop and render a Comment for every piece of data */}
       {comments.map( comment =>{
         return <Comment key={comment.id} comment={comment}/>
